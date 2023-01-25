@@ -9,7 +9,7 @@ RADIUS_MAX = 100
 ACCEL_MOD = 0.01
 MIN_DISTANCE = 20
 # COLOR_ATTR_MATRIX = [[0.8, -0.2, 0.3], [1, -0.2, 0.5], [-0.3, 0.6, -0.5]]
-DRAG = 0.9
+DRAG = .95
 BUFFER_ZONE = 1
 MAX_ACCEL = 0.08
 
@@ -17,7 +17,7 @@ MAX_ACCEL = 0.08
 class World:
     def __init__(self):
         self.pixels = self.generate_pixels()
-        self.color_matrix = [[0.9,1,-0.8],[-0.8,0.9,1],[1,-0.8,0.9]]
+        self.color_matrix = [[0.2,0.3,-0.6],[-0.5,0.5,.1],[1,-0.4,0.4]]
         self.attraction_matrix = None
 
     def generate_pixels(self):
